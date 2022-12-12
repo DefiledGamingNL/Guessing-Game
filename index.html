@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="app.css" />
+		<script src="app.js"></script>
+	</head>
+	<body>
+		<section class="modalStartGame hidden">
+			<div class="flex">
+				<img src="user.png" width="50px" height="50px" alt="user" />
+				<button class="btn-close">⨉</button>
+			</div>
+			<div>
+				<h3>Enter your Maximum number!</h3>
+			</div>
+			<input type="number" id="maximumNumber" name="maximumNumber" required />
+			<input type="button" value="Get Value" onclick="let maximum = maximumNumber.value;" />
+		</section>
+
+		<section class="modalLow hidden">
+			<div class="flex">
+				<img src="user.png" width="50px" height="50px" alt="user" />
+				<button class="btn-close">⨉</button>
+			</div>
+			<div>
+				<h3>To low, enter a new number!</h3>
+			</div>
+			<input type="number" id="maximumNumber" name="maximumNumber" required />
+			<button class="btn">Submit</button>
+		</section>
+
+		<section class="modalHigh hidden">
+			<div class="flex">
+				<img src="user.png" width="50px" height="50px" alt="user" />
+				<button class="btn-close">⨉</button>
+			</div>
+			<div>
+				<h3>To high, enter a new number!</h3>
+			</div>
+			<input type="number" id="maximumNumber" name="maximumNumber" required />
+		</section>
+
+		<div class="overlay hidden"></div>
+		<button onclick="guessGame();" class="btn btn-open">Start Game!</button>
+	</body>
+</html>
